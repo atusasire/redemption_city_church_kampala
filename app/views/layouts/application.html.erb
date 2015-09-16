@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RedemptionCityChurchKampala</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div style="display: none;" id="preloader">
+	<div style="display: none;" id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+<div class="all-elements">
+    <div class="header nav-down">
+        <a class="header-logo" href="#"><h2>RCC K'LA</h2></a>
+        <div class="header-icons">
+            <a class="bg-green2 show-share-bottom" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="twitter-color" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="facebook-color" href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="decoration"></div>
+    </div>
+    <div class="header-clear"></div>
+    <!-- Left Top Menu -->
+<%= yield %>
+
+</body>
+</html>
