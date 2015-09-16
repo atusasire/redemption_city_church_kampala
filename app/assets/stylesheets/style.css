@@ -3,7 +3,7 @@
 
 Project:	 Circles
 Version:	 1.0
-Primary Use: Site Template 
+Primary Use: Site Template
 Layout:      Responsive
 Platforms:   Mobile & Tablet
 -----------------------------
@@ -69,22 +69,22 @@ body{
 /*Background for fullscreens*/
 
 .bg1{
-    background-image:url(../images/pictures/1.jpg);   
+    background-image:url(../images/pictures/1.jpg);
     background-position:center center;
 }
 
 .bg2{
-    background-image:url(../images/pictures/2.jpg);   
+    background-image:url(../images/pictures/2.jpg);
     background-position:center center;
 }
 
 .bg3{
-    background-image:url(../images/pictures/3.jpg);   
+    background-image:url(../images/pictures/3.jpg);
     background-position:center center;
 }
 
 .bg4{
-    background-image:url(../images/pictures/4.jpg);   
+    background-image:url(../images/pictures/4.jpg);
     background-position:center center;
 }
 
@@ -110,10 +110,9 @@ body{
 }
 
 .header-logo{
-    width:100px;
+    width:250px;
     height:22px;
     background-size:100px 22px;
-    background-image:url(../images/header-logo2.png);
     margin-top:9px;
     float:left;
 }
@@ -214,7 +213,7 @@ body{
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
-    transition: all 200ms ease; 
+    transition: all 200ms ease;
 }
 
 .circle-slider img:hover{
@@ -227,7 +226,7 @@ body{
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
-    transition: all 200ms ease;  
+    transition: all 200ms ease;
 }
 
 .circle-slider div h1{
@@ -327,15 +326,15 @@ body{
 	.thumb-column img{
 		width:140px;
 		height:140px;
-		border-radius:150px;	
+		border-radius:150px;
 	}
-	
+
 	.thumb-column em{
-		line-height:28px;	
+		line-height:28px;
 	}
-	
+
 	.thumb-column strong{
-		padding-top:10px;	
+		padding-top:10px;
 	}
 }
 
@@ -345,12 +344,12 @@ body{
 .content-heading{
     z-index:60;
     position:relative;
-	margin-bottom:30px;	
+	margin-bottom:30px;
 }
 
 .content-heading h4{
 	color:#FFFFFF;
-	position:absolute;	
+	position:absolute;
 	z-index:20;
 	text-transform:uppercase;
 	margin-top:37px;
@@ -360,12 +359,12 @@ body{
 }
 
 .content-heading{
-	height:120px;	
+	height:120px;
 }
 
 .content-heading p{
 	color:#FFFFFF;
-	position:absolute;	
+	position:absolute;
 	z-index:98;
 	margin-top:58px;
 	padding-left:30px;
@@ -382,7 +381,7 @@ body{
 	font-size:20px;
 	position:absolute;
 	color:#1f1f1f!important;
-	right:31px;	
+	right:31px;
 	z-index:98;
     width:50px;
     height:50px;
@@ -407,7 +406,7 @@ body{
 }
 
 .content-heading img:hover{
-    filter: blur(3px);  
+    filter: blur(3px);
     -webkit-filter:blur(3px);
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -418,26 +417,26 @@ body{
 
 @media (min-width:768px){
 	.content-heading{
-		height:140px;	
+		height:140px;
 	}
-	
+
 	.content-heading h4{
-		font-size:20px;	
+		font-size:20px;
 		margin-top:45px;
 		padding-left:50px;
 	}
-	
+
 	.content-heading p{
-		font-size:13px;	
+		font-size:13px;
 		margin-top:75px;
 		padding-left:50px;
 	}
-	
+
     .content-heading a{
         font-size:20px;
         position:absolute;
         color:#1f1f1f!important;
-        right:31px;	
+        right:31px;
         z-index:98;
         width:60px;
         height:60px;
@@ -456,7 +455,7 @@ body{
 /*////////////////////*/
 
 .staff-item img{
-	border-radius:300px;	
+	border-radius:300px;
 	max-width:150px;
 	margin-left:auto;
 	margin-right:auto;
@@ -483,7 +482,7 @@ body{
 
 .staff-item h4{
 	text-align:center;
-	margin-top:20px;	
+	margin-top:20px;
 	font-size:16px;
 }
 
@@ -499,7 +498,7 @@ body{
 
 .staff-item strong{
     font-size:12px;
-	display:block;	
+	display:block;
 	font-weight:400;
 	text-align:center;
 	padding-left:20px;
@@ -513,7 +512,7 @@ body{
 .quote-slider h4{
 	font-family:'Source Sans Pro', sans-serif;
 	font-size:18px;
-	font-weight:300;	
+	font-weight:300;
 	width:87%;
 	text-align:center;
 	margin-left:auto;
@@ -523,7 +522,7 @@ body{
 
 .quote-slider a{
 	text-align:center;
-	margin-top:20px;	
+	margin-top:20px;
 }
 
 /*Center Socials*/
@@ -531,7 +530,7 @@ body{
 .center-socials{
     width:165px;
     margin-left:auto;
-    margin-right:auto;  
+    margin-right:auto;
     margin-bottom:0px;
     padding-top:10px;
     margin-top:-10px;
@@ -545,7 +544,7 @@ body{
     transition: all 250ms ease;
     margin-bottom:30px;
     -webkit-box-shadow: 0 1px 5px 2px rgba(0,0,0,0.15);
-            box-shadow: 0 1px 5px 2px rgba(0,0,0,0.15); 
+            box-shadow: 0 1px 5px 2px rgba(0,0,0,0.15);
 }
 
 .center-socials a:hover{
@@ -610,7 +609,7 @@ body{
 
 /*Animation*/
 
-.highlight-link {    
+.highlight-link {
     -webkit-animation: highlights 550ms infinite;
     -moz-animation: highlights 550ms infinite;
     -ms-animation: highlights 550ms infinite;
@@ -619,20 +618,20 @@ body{
 }
 
 @-webkit-keyframes highlights {
-    100% { 
+    100% {
         -moz-transform: scale(1);
         -webkit-transform: scale(1);
         -o-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);
     }
-    50% { 
+    50% {
         -moz-transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
-    } 
+    }
 }
 
 
