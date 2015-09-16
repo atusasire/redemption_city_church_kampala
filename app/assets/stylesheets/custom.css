@@ -53,6 +53,141 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	overflow:hidden;
 }
 
+/*	20. Profile */
+
+.profile-header-contents{
+	position:relative;
+	z-index:10;
+}
+
+.profile-header {
+	background-image:url(../images/pictures/5.jpg);
+	background-repeat:repeat;
+}
+
+.profile-header-logo{
+	width:120px;
+	height:120px;
+	border-radius:100px;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:auto;
+	margin-right:auto;
+	border:solid 2px #ffffff;
+}
+
+.profile-header-background{
+	background-image:url(../images/pictures/5w.jpg);
+	background-repeat:repeat;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+}
+
+.profile-header-overlay{
+	background-color:rgba(0,0,0,0.7);
+	position:absolute;
+	z-index:5;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	height:100%;
+}
+
+.profile-header-icon-one{
+	position:absolute;
+	height:45px;
+	width:45px;
+	border-radius:45px;
+	top:70px;
+	left:30px;
+	background-color:rgba(255,255,255,0.1);
+	line-height:45px;
+	font-size:14px;
+	text-align:center;
+	color:rgba(255,255,255,0.7);
+}
+
+.profile-header-icon-two{
+	position:absolute;
+	height:45px;
+	width:45px;
+	border-radius:45px;
+	top:70px;
+	right:30px;
+	background-color:rgba(255,255,255,0.1);
+	line-height:45px;
+	font-size:14px;
+	text-align:center;
+	color:rgba(255,255,255,0.7);
+}
+
+.profile-header-heading{
+	text-align:center;
+	font-weight:400;
+	color:#FFFFFF;
+	font-size:22px;
+}
+
+.profile-header-subheading{
+	text-align:center;
+	display:block;
+	color:rgba(255,255,255,0.6);
+	margin-top:-5px;
+	font-style:normal;
+	margin-bottom:40px;
+	font-size:12px;
+}
+
+.profile-header-socials a{
+	width:33%;
+	float:left;
+	text-align:center;
+	color:rgba(255,255,255,0.8);
+	font-size:12px;
+	margin-bottom:30px;
+}
+
+.profile-header-socials a .fa-facebook{background-color:rgba(59, 89, 152, 0.5)!important;}
+.profile-header-socials a .fa-twitter{background-color:rgba(64, 153, 255, 0.5)!important;}
+.profile-header-socials a .fa-google-plus{background-color:rgba(211, 72, 54, 0.5)!important;}
+
+
+.profile-header-socials a i{
+	width:45px;
+	height:45px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(255,255,255,0.1);
+	border-radius:45px;
+	line-height:47px;
+	display:block;
+	text-align:center;
+	color:rgba(255,255,255,0.7);
+	font-size:16px;
+	margin-bottom:10px;
+}
+
+.profile-header-contents a{
+	transition:all 200ms ease;
+}
+
+.profile-header-contents a:hover{
+	color:rgba(255,255,255,1);
+	transition:all 200ms ease;
+}
+
+.profile-header-contents a i{
+	transition:all 200ms ease;
+}
+
+.profile-header-contents a i:hover{
+	color:rgba(255,255,255,1);
+	transition:all 200ms ease;
+}
+
 /*	2. Typography  */
 
 p {
@@ -593,6 +728,7 @@ table tr:hover td{
 }
 
 
+
 /*	7. Lists  */
 
 
@@ -641,6 +777,7 @@ table tr:hover td{
 	margin-right:10px;
 	width:12px;
 }
+
 
 /*	9. Speach Bubbles  */
 
