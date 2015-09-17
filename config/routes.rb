@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :image_galleries
+  mount RailsAdmin::Engine => '/rccadmin', as: 'rails_admin'
   root 'rcc#home'
 
   get 'rcc/care_group'

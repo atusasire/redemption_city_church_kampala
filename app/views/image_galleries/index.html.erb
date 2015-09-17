@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+ <!--Content Starts Here-->
+<div class="gallery-fix"></div>
+<%= render partial: "layouts/topmenu" %>
+<%= render partial: "layouts/bottom_menu" %>
+
+    <div class="content">
+
+        <h3>An adaptive image gallery</h3>
+        <p>
+            An adaptive image gallery, simply tap one of the three icons at the bottom right and the gallery will shift
+            and adjust to change the view of the current thumbnail style. Three columns, two columns or one simple large
+            column of icons. Try it!
+        </p>
+        <div class="clear"></div>
+
+        <div class="decoration"></div>
+
+	        <div class="portfolio-adaptive adaptive-three">
+	            <% @image_galleries.each do |image_gallery| %>
+		            <div class="adaptive-item">
+		                <%=link_to image_gallery do%>
+		                    <%= image_tag(image_gallery.avatar.url(:medium), class:"responsive-image") %>
+		                <% end %>
+		            </div>
+		        <% end %>
+        	</div>
+        <div class="decoration"></div>
+    </div>
+
+
+<%= link_to 'New Image gallery', new_image_gallery_path %>
