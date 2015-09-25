@@ -6,27 +6,21 @@
 
     <div class="content">
 
-        <h3>An adaptive image gallery</h3>
-        <p>
-            An adaptive image gallery, simply tap one of the three icons at the bottom right and the gallery will shift
-            and adjust to change the view of the current thumbnail style. Three columns, two columns or one simple large
-            column of icons. Try it!
-        </p>
+        <h4 align="center">Redemption image gallery</h4>
         <div class="clear"></div>
-
         <div class="decoration"></div>
 
-	        <div class="portfolio-adaptive adaptive-three">
-	            <% @image_galleries.each do |image_gallery| %>
-		            <div class="adaptive-item">
-		                <%=link_to image_gallery do%>
-		                    <%= image_tag(image_gallery.avatar.url(:medium), class:"responsive-image") %>
-		                <% end %>
-		            </div>
-		        <% end %>
-        	</div>
-        <div class="decoration"></div>
+        <div class="portfolio-adaptive">
+            <% @image_galleries.each do |image_gallery| %>
+	            <div class="adaptive-item col-xs-12 col-sm-4 col-md-4">
+	                <%=link_to image_gallery do%>
+	                    <%= image_tag(image_gallery.avatar.url(:medium), class:"responsive-image") %>
+	                <% end %>
+	                <%=link_to "Details", image_gallery, class: "btn btn-xs btn-block "%>
+	                <legend></legend>
+	            </div>
+	        <% end %>
+    	</div>
+    	<div class="decoration"></div>
     </div>
 
-
-<%= link_to 'New Image gallery', new_image_gallery_path %>

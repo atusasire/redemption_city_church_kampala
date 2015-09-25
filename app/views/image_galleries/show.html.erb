@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
+<%= render partial: "layouts/topmenu" %>
+<%= render partial: "layouts/bottom_menu" %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @image_gallery.title %>
-</p>
+<div class="portfolio-adaptive adaptive-one circle-homepage">
+	 <div class="adaptive-item" align ="center">
+	 	<%= link_to 'Back', image_galleries_path, class:"btn btn-xs btn-info pull-right" %>
+	 	<legend></legend>
+	 	<%= image_tag @image_gallery.avatar.url(:large), class:"responsive-image"%>
+		<legend></legend>
+		<h2><%= @image_gallery.title %></h2>
+		<p>
+		  <%= @image_gallery.description %>
+		</p>
+	</div>
+</div>
 
-<p>
-  <strong>Category:</strong>
-  <%= @image_gallery.category %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @image_gallery.description %>
-</p>
-
-<%= link_to 'Edit', edit_image_gallery_path(@image_gallery) %> |
-<%= link_to 'Back', image_galleries_path %>

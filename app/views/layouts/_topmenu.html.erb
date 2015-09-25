@@ -1,6 +1,12 @@
 	<ul class="top-menu">
-    	<h1 align="center">Redemption city church</h1>
-		<li><a class="deploy-submenu" href=""><i class="fa fa-home bg-blue2"></i>Home<i class="fa fa-plus"></i></a></li>
+    	<h2 class="well" align="center">Redemption city church</h2>
+		<li><a href="#" class="close-menu"><i class="fa fa-times bg-red2"></i>Close<i class="fa fa-times fa-lg"></i></a></li>
+
+		<li>
+			<%=link_to  root_path do%>
+				<i class="fa fa-home bg-blue2 deploy-submenu"></i>Home<i class="fa fa-plus fa-2x"></i>
+			<% end %>
+		</li>
         <li class="has-submenu">
             <a class="deploy-submenu" href="#"><i class="fa fa-cog bg-blue1"></i>Sermons<i class="fa fa-plus"></i></a>
             <ul class="submenu">
@@ -30,5 +36,4 @@
 		<li><a class="deploy-submenu" href=""><i class="fa fa-user bg-red1"></i>Donate<i class="fa fa-circle"></i></a></li>
 
         <li><a href=""><i class="fa fa-envelope bg-red1"></i>Contact<i class="fa fa-circle"></i></a></li>
-        <li><a href="#" class="close-menu"><i class="fa fa-times bg-red2"></i>Close<i class="fa fa-circle"></i></a></li>
     </ul>
