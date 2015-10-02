@@ -4,7 +4,7 @@ class ImageGalleriesController < ApplicationController
   # GET /image_galleries
   # GET /image_galleries.json
   def index
-    @image_galleries = ImageGallery.all
+    @image_galleries = ImageGallery.order("created_at").page(params[:page]).per(6)
   end
 
   # GET /image_galleries/1

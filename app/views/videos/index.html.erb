@@ -24,6 +24,10 @@
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
         <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+       <div class="tags">tags: <%= video.tag %></div>
+        <p><div class="embed-container">
+        <%= embed(video.utube_url) %>
+        </div></p>
     <% end %>
   </tbody>
 </table>
