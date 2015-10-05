@@ -10,28 +10,47 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <style type="text/css">
+  .g
+  {
+    background-color: #16A085;
+  }
+  .bg
+  {
+    /*background: url("/assets/redemption.jpg");*/
+    background-color: #efefef;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  </style>
 </head>
-<body>
+<body class="bg">
 
 <div style="display: none;" id="preloader">
 	<div style="display: none;" id="status">
     	<p class="center-text">
-			Loading the content...
+			   Loading the content...
             <em>Loading depends on your connection speed!</em>
-        </p>
+      </p>
     </div>
 </div>
 <div class="all-elements">
-    <div class="header nav-down">
-        <%= link_to  root_path, class:"header-logo" do %>REDEMPTION CITY CHURCH<% end %>
+    <div class="header nav-down g">
+        <%= link_to  root_path, class:"header-logo", style: "color:#ffffff; font-size: 15px;" do %>REDEMPTION CITY CHURCH<% end %>
+
         <div class="header-icons">
             <a class="bg-green2 show-share-bottom" href="#"><i class="fa fa-linkedin"></i></a>
             <a class="twitter-color" href="#"><i class="fa fa-twitter"></i></a>
             <a class="facebook-color" href="#"><i class="fa fa-facebook"></i></a>
         </div>
+        <div style="padding-bottom:20px;">
+          <input class="blog-search" value="Search caregroup..." type="text">
+        </div>
         <div class="decoration"></div>
     </div>
-    <div class="header-clear"></div>
+</div>
+<div class="header-clear"></div>
     <!-- Left Top Menu -->
 <%= yield %>
 
