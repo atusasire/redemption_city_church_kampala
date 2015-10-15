@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'socialize/index'
+
   resources :videos
   resources :contacts
   resources :image_galleries
